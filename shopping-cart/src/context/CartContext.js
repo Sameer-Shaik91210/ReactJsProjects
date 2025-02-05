@@ -2,6 +2,7 @@ import React, { createContext, useContext, useReducer } from "react";
 import { faker } from "@faker-js/faker";
 import { cartReducer } from "./Reducers";
 
+//context creation
 const cart = createContext();
 
 export const CartContext = ({ children }) => {
