@@ -1,0 +1,64 @@
+/* TimeCard container */
+.time-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  margin: 20px;
+}
+
+/* Clock container */
+.clock {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border: 6px solid #333;
+  border-radius: 50%;
+  margin: 10px auto;
+  background: white;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Clock hands */
+.hand {
+  position: absolute;
+  transform-origin: bottom center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hour-hand {
+  width: 6px;
+  height: 35px;
+  background: black;
+  top: 25px;
+  left: 57px;
+}
+
+.minute-hand {
+  width: 4px;
+  height: 50px;
+  background: #555;
+  top: 10px;
+  left: 58px;
+}
+
+.second-hand {
+  width: 2px;
+  height: 55px;
+  background: red;
+  top: 5px;
+  left: 59px;
+}
+
+/* Center dot */
+.center-dot {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 55px;
+  left: 55px;
+}
