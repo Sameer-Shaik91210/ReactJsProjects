@@ -1,3 +1,12 @@
+/* Editable time input */
+.time-input {
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
 /* TimeCard container */
 .time-card {
   background: white;
@@ -25,9 +34,10 @@
 .hand {
   position: absolute;
   transform-origin: bottom center;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.05s linear; /* Smooth transition */
 }
 
+/* Hour hand */
 .hour-hand {
   width: 6px;
   height: 35px;
@@ -36,6 +46,7 @@
   left: 57px;
 }
 
+/* Minute hand */
 .minute-hand {
   width: 4px;
   height: 50px;
@@ -44,6 +55,7 @@
   left: 58px;
 }
 
+/* Second hand (real-time movement) */
 .second-hand {
   width: 2px;
   height: 55px;

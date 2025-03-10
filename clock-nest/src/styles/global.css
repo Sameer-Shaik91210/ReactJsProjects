@@ -2,14 +2,25 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: #f4f4f4;
+  padding: 0px;
+  margin: 0px;
 }
 
 .timezone-container {
+  padding: 20px;
+  align-items: center;
+  margin: auto;
+  background-color: thistle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.abroad-zones {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
 }
 
 .time-card {
@@ -27,4 +38,6 @@ body {
 .time-card input {
   width: 100%;
   padding: 5px;
+  border: none;
+  outline: none;
 }

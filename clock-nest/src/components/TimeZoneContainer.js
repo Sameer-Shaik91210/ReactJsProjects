@@ -1,6 +1,7 @@
 import React from "react";
 import { useTime } from "../context/TimeContext";
 import TimeCard from "./TimeCard";
+import "../styles/global.css";
 
 const convertTime = (indianTime, offset) => {
   const date = new Date(indianTime);
@@ -24,17 +25,21 @@ const TimeZoneContainer = () => {
         isEditable={true}
         onChange={handleIndianTimeChange}
       />
-
-      {/* Other Time Zones (Non-Editable) */}
-      <TimeCard
-        label="New York (EST)"
-        time={convertTime(state.indianTime, -10.5)}
-      />
-      <TimeCard
-        label="London (GMT)"
-        time={convertTime(state.indianTime, -5.5)}
-      />
-      <TimeCard label="Tokyo (JST)" time={convertTime(state.indianTime, 3.5)} />
+      <div class="abroad-zones">
+        {/* Other Time Zones (Non-Editable) */}
+        <TimeCard
+          label="New York (EST)"
+          time={convertTime(state.indianTime, -10.5)}
+        />
+        <TimeCard
+          label="London (GMT)"
+          time={convertTime(state.indianTime, -5.5)}
+        />
+        <TimeCard
+          label="Tokyo (JST)"
+          time={convertTime(state.indianTime, 3.5)}
+        />
+      </div>
     </div>
   );
 };
